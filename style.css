@@ -48,12 +48,17 @@
       position: fixed;
       bottom: 0;
       width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
     .topnav a {
-      float: none;
-      display: inline-block;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
 
     .album-cover-container {
         position: relative;
