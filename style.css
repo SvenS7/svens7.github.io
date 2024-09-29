@@ -8,11 +8,6 @@ body {
 p {
   color: white;
   font-size: 20px;
-  text-shadow:
-      0.07em 0 black,
-      0 0.07em black,
-      -0.07em 0 black,
-      0 -0.07em black;
   white-space: pre-wrap;
 }
 
@@ -218,3 +213,69 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
+
+
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: rgb(235, 235, 235);
+    margin: 0px;
+    color: rgb(50, 50, 50);
+    overflow-x: hidden;
+  }
+
+  p {
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    white-space: pre-wrap;
+  }
+
+  #menu-background-pattern {
+    background-image: radial-gradient(
+      rgba(0, 0, 0, 0.1) 9%,
+      transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease,
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .menu-item {
+    color: rgb(50, 50, 50);
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(3rem, 8vw, 8rem);
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    text-decoration: none;
+    transition: opacity 400ms ease;
+  }
+
+  #home-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(30,30,30);
+  }
+}
+
+
