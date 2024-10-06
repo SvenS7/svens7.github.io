@@ -15,43 +15,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="menu">
-        <div id="menu-items">
-            <a href="#home-container" class="menu-item">Startpagina</a>
-            <a href="#macro-container" class="menu-item">CV</a>
-            <a href="#portret-container" class="menu-item">CKV Opdrachten</a>
-            <a href="#landscape-container" class="menu-item" >Mijn Foto's</a>
-        </div>
-        <div id="menu-background-pattern"></div>
-        <div id="menu-background-image"></div>
+    <section>
+        <div id="menu">
+            <div id="menu-items">
+                <a href="#home-container" class="menu-item">Startpagina</a>
+                <a href="#macro-container" class="menu-item">CV</a>
+                <a href="#portret-container" class="menu-item">CKV Opdrachten</a>
+                <a href="#landscape-container" class="menu-item" >Mijn Foto's</a>
+            </div>
+            <div id="menu-background-pattern"></div>
+            <div id="menu-background-image"></div>
+    </section>
     </div>
     <main>
         <section>
             <article id="home-container">
                     <div class="text-container">
                         <h2>Startpagina</h2>
-                        <h3>Wie ben ik</h3>
-                        <p>Ik ben Sven Scheepstra, ik zit op het Harens Lyceum.</p>
-                        <p>Ik ben 15 jaar oud. Ik woon met mijn broertje en mijn ouders in een twee onder een kap.</p>
-                        <p>Duis sit amet mauris velit</p>
-
-                        <h3>Wat doe ik</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Suspendisse semper et elit a faucibus.</p>
-                        <p>Duis sit amet mauris velit</p>
+                        <div class="hover-box" id="box1">
+                            <h3>Wie ben ik</h3>
+                            <p>Hallo mijn naam is Sven en ik ben een leerling van het Harens Lyceum. Ik heb een enorme passie voor Programmeren en Computers, vandaar dat ik deze website heb gemaakt. Ik leef met mijn vader, moeder en mijn broertje in Yde. Ik heb een konijn genaamt Flappie. Ik ben nu 15 jaar. </p>
+                        </div>
+                        <div class="hover-box" id="box2">
+                            <h3>Mijn vakantie</h3>
+                            <p>Ik ben deze zomervakantie was naar Spanje. Ik ben toen naar de stad Valencia gegaan. Ik heb daar veel bezocht zoals de Centrale Markthal, het Stadhuis, het Strand, en de winkel straat Carrer de Colón. Het weer daar was heerlijk. Het was best wel warm elke dag wel 30 graden. </p>
+                        </div>
+                        <div class="hover-box" id="box3">
+                            <h3>Hobbies</h3>
+                            <p>Mijn passie voor Computers is dat ik mijn eigen computer heb gebouwd. We hebben onze eigen home server waar Home Assistant op draait. In mijn vrije tijd mag ik hier graag mee spelen. Mijn sporten zijn dat ik op Volleybal heb gezeten. Nu doe ik geen sport meer, omdat er niet meer genoeg mensen waren om een toernooi te spelen. </p>
+                        </div>
+                            <h3>PC bouwen</h3>
+                            <p>Ik mag ook graag computers bouwen en designen. Ik heb zelf ook mijn eigen computer gebouwd. In mijn vrije tijd mag ik graag aan mijn computer zitten. </p>
                     </div>
-                <div class="image-container">
-                    <img
-                        src="sven.jpg"
-                        alt=""
-                        class="image"
-                        loading="lazy"
-                        style="width: 25vw;"
-                        sizes="25w"
-                        onContextMenu="return false;"
-                    >
-
-                </div>
+                    <div class="image-container">
+                        <img
+                            src="sven.jpg"
+                            alt="sven"
+                            class="image"
+                            sizes="25w"
+                            onContextMenu="return false;"
+                        >
+                        <img
+                            src="spanje.jpg"
+                            alt="Centrale Markthal Valencia"
+                            class="image"
+                            sizes="25w"
+                            onContextMenu="return false;"
+                        >
+                        <img
+                            src="shot1.jpg"
+                            alt="sven"
+                            class="image"
+                            sizes="25w"
+                            onContextMenu="return false;"
+                        >
+                    </div>
             </article>
         </section>
 
@@ -62,23 +80,70 @@
                     <p>Wordt nog uitgelegd</p>
                 </div>
                 <div class="image-container">
-                    <img src="https://picsum.photos/1920/1080?random=1" alt="" width="75%" height=auto class="image" loading="lazy">
+                    <img src="https://picsum.photos/1920/1080?random=1" alt="" width="75%" height=auto class="image" loading="lazy" id="changeable-image">
                 </div>
             </article>
         </section>
 
         <section>
-            <div id="portret-container"><h2>CKV Opdrachten</h2>
-			<p>Hier komen de ckv opdrachten die je hebt gemaakt!</p>
-
+            <div id="portret-container">
+                <div class="text-container">
+                    <h2>CKV Opdrachten</h2>
+			        <p>Hier komen de ckv opdrachten die je hebt gemaakt!</p>
+                </div>
             </div>
         </section>
 
         <section>
             <div id="landscape-container">
-				<h2>Mijn Foto's</h2>
-				<p>Hier komen foto's van jou</p>
-
+                <div class="text-container">
+				    <h2>Mijn Foto's</h2>
+				    <p>Dit zijn een paar foto's van mij.</p>
+                </div>
+                <div class="image-container2">
+                    <img
+                            src="vliegveld-valencia.jpg"
+                            alt="vliegveld-valencia"
+                            class="image2"
+                            sizes="25w"
+                            onContextMenu="return false;"
+                        >
+                    <img
+                        src="simon2.jpg"
+                        alt="simon"
+                        class="image2"
+                        sizes="25w"
+                        onContextMenu="return false;"
+                    >
+                    <img
+                        src="kerk-breda.jpg"
+                        alt="Grote Kerk Breda"
+                        class="image2"
+                        sizes="25w"
+                        onContextMenu="return false;"
+                    >
+                    <img
+                        src="thailf.jpeg"
+                        alt="Sven kramer bocht"
+                        class="image2"
+                        sizes="25w"
+                        onContextMenu="return false;"
+                    >
+                    <img
+                        src="oostenrijk.jpg"
+                        alt="oostenrijk"
+                        class="image2"
+                        sizes="25w"
+                        onContextMenu="return false;"
+                    >
+                    <img
+                        src="tommy.jpg"
+                        alt="kat"
+                        class="image2"
+                        sizes="25w"
+                        onContextMenu="return false;"
+                    >
+                </div>
             </div>
         </section>
     </main>

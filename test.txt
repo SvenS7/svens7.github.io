@@ -1,0 +1,8 @@
+<img
+                            src="sven.jpg"
+                            alt="sven"
+                            class="image"
+                            style="width: 25vw;"
+                            sizes="25w"
+                            onContextMenu="return false;"
+                        >

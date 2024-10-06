@@ -3,6 +3,8 @@ body {
   margin: 0px;
   color: white;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: font-size 1000ms ease;
 }
 
 p {
@@ -11,7 +13,13 @@ p {
   white-space: pre-wrap;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
 
+section {
+  scroll-snap-align: start;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -147,11 +155,13 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+
 }
 
 .text-container {
   text-align: left;
   padding-left: 10%;
+  grid-template-columns: 1fr auto;
 }
 
 .text-container h2 {
@@ -165,25 +175,7 @@ p {
   padding-bottom: 0px;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.image {
- opacity: .8;
- border-radius: 8px;
- transition: transform 400ms ease,
-    opacity 400ms ease,
-    border-radius 400ms ease;
-}
-
-.image:hover {
-  transform: scale(1.05);
-  opacity: 1;
-  border-radius: 16px;
- }
 
 
 #macro-container {
@@ -268,6 +260,34 @@ p {
     grid-gap: 10px;
   }
 
+  #macro-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+
+  #portret-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  #landscape-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
   ::-webkit-scrollbar-thumb {
     background: black;
     border-radius: 4px;
@@ -279,3 +299,60 @@ p {
 }
 
 
+.image {
+  opacity: 0.4; /* Begin met een onzichtbare afbeelding */
+  border-radius: 8px; /* Originele border-radius */
+  transition: transform 400ms ease,
+              opacity 1000ms ease,
+              border-radius 400ms ease,
+              width 1000ms ease,
+              height 1000ms ease;
+  display: table; /* Start met alle afbeeldingen verborgen */
+  margin: 10px;
+  width: 10vw;
+}
+
+.image.show {
+  opacity: 1; /* De standaard opaciteit */
+  width: 15vw;
+}
+
+ .image:hover {
+   transform: scale(1.05);
+   border-radius: 16px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image2 {
+    opacity: 0.8; /* Begin met een onzichtbare afbeelding */
+    border-radius: 8px; /* Originele border-radius */
+    transition: transform 400ms ease,
+                opacity 1000ms ease,
+                border-radius 400ms ease,
+                width 1000ms ease,
+                height 1000ms ease;
+    margin: 10px;
+    width: 17vw;
+    height: auto;
+    gap: 0px;
+    padding: 0px;
+  }
+
+  .image2:hover {
+    transform: scale(1.05);
+    border-radius: 16px;
+    opacity: 1;
+   }
+
+   .image-container2 {
+    display: table-row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
