@@ -380,6 +380,7 @@ section {
                 width 1000ms ease,
                 height 1000ms ease;
   margin: 15px;
+  opacity: 0.8;
 }
 
 .image-page2 img:hover {
