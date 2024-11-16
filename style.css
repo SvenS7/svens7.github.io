@@ -356,3 +356,43 @@ section {
     flex-wrap: wrap;
     margin: 10px;
   }
+
+
+.verwerkingsopdracht {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 756px;
+}
+.textopdracht {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-page2 img{
+  max-width: 256px;
+  border-radius: 8px;
+  transition: transform 400ms ease,
+                opacity 1000ms ease,
+                border-radius 400ms ease,
+                width 1000ms ease,
+                height 1000ms ease;
+  margin: 15px;
+}
+
+.image-page2 img:hover {
+  transform: scale(1.05);
+  border-radius: 16px;
+  opacity: 1;
+}
+
+.text p {
+  max-width: 475px;
+}
+
+figure figcaption {
+  margin-left: 15px;
+  max-width: 256px;
+}
