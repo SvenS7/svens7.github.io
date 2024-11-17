@@ -7,6 +7,11 @@ body {
   transition: font-size 1000ms ease;
 }
 
+a {
+  color: white;
+}
+
+
 p {
   color: white;
   font-size: 20px;
@@ -214,6 +219,10 @@ section {
     margin: 0px;
     color: rgb(50, 50, 50);
     overflow-x: hidden;
+  }
+
+  a {
+    color: rgb(50, 50, 50);
   }
 
   p {
