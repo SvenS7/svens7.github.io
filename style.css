@@ -109,7 +109,7 @@ section {
 }
 
 #menu-background-image {
-  background-image: url("background.jpg");
+  background-image: url("./assets/images/1080p/background.webp");
   background-position: center 40%;
   background-size: 110vmax;
   height: 100%;
